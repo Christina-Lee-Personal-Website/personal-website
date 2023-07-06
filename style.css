@@ -44,6 +44,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 .project-outer {
     border: 3px;
 
@@ -71,6 +75,13 @@ h1 {
 
 p {
     width: 50%;
+}
+
+.personal-summary {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .hobby-header {
