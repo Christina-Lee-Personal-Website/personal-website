@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     background-color: darksalmon;
 
@@ -59,6 +63,12 @@ h1 {
     margin-left: auto;
 }
 
+.portfolio-img {
+    width: 240px;
+    display: inline-block;
+    position: absolute;
+}
+
 
 .home-img {
     width: 300px;
@@ -70,7 +80,7 @@ h1 {
 }
 
 p {
-    width: 50%;
+    width: 60%;
 }
 
 .personal-summary {
@@ -79,10 +89,4 @@ p {
 
 .hobby-header {
     text-align: center;
-}
-
-.portfolio-img {
-    width: 250px;
-    display: inline-block;
-    overflow: clip;
 }
