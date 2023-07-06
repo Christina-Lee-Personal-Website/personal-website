@@ -37,7 +37,7 @@ header li a {
 }
 
 li a:hover {
-    background-color: rgb(236, 167, 167);
+    background-color: rgb(235, 165, 165);
 }
 
 h1 {
@@ -52,7 +52,7 @@ h1 {
 .project-inner {
     display: block;
     width: 70%;
-    background-color:rgb(234, 193, 180);
+    background-color:rgb(237, 211, 203);
     padding: 10px;
     margin: 5px;
     margin-right: auto;
