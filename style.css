@@ -1,5 +1,6 @@
 header {
-    background-color:rgb(236, 167, 167);
+    background-color: darksalmon;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -19,33 +20,14 @@ body {
     padding: 30px;
 }
 
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(236, 167, 167);
-
-
-} */
-
-/* li .name {
-    float: left;
-    font-size: large;
-}
-
-li .page {
-    /* float: right; */
-    /* display: block;
-    text-align: center;
-    padding: 8px;
-    font-size: large;
-    color: lavender; */
-/* } */
-
 header li {
+    color: lavender;
     margin: 20px;
     font-size: x-large;
+}
+
+.name {
+    font-size: xx-large;
 }
 
 header li a {
@@ -55,17 +37,44 @@ header li a {
 }
 
 li a:hover {
-    background-color: darksalmon;
+    background-color: rgb(236, 167, 167);
 }
 
 h2 {
     text-align: center;
 }
 
+.project-outer {
+    border: 3px;
 
-img {
+}
+
+.project-inner {
+    display: block;
+    width: 70%;
+    background-color:rgb(234, 193, 180);
+    padding: 10px;
+    margin: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.home-img {
     width: 300px;
-    display: inline-block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    width: 50%;
+}
+
+.portfolio-img {
+    width: 250px;
+    display: inline-block;
+    overflow: clip;
 }
