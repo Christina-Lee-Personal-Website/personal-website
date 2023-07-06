@@ -1,24 +1,57 @@
-ul {
+header {
+    background-color:rgb(236, 167, 167);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+header * {
+    display: inline;
+}
+
+body {
+    margin-top: 80px;
+    padding: 30px;
+}
+
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     background-color: rgb(236, 167, 167);
 
 
+} */
+
+/* li .name {
+    float: left;
+    font-size: large;
 }
 
-li {
-    float: left;
-    display: block;
+li .page {
+    /* float: right; */
+    /* display: block;
+    text-align: center;
     padding: 8px;
+    font-size: large;
+    color: lavender; */
+/* } */
+
+header li {
+    margin: 20px;
     font-size: x-large;
 }
 
-li a {
-    float: right;
-    display: block;
-    padding: 8px;
-    text-align: center;
+header li a {
+    color: lavender;
+    text-decoration: none;
+    padding: 30px;
 }
 
 li a:hover {
