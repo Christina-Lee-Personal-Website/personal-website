@@ -1,4 +1,29 @@
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    background-color: rgb(236, 167, 167);
 
+
+}
+
+ nav li {
+    float: left;
+    display: block;
+    padding: 8px;
+    font-size: x-large;
+}
+
+nav a {
+    float: right;
+    display: block;
+    padding: 8px;
+}
+
+h2 {
+    text-align: center;
+}
 
 
 img {
