@@ -73,6 +73,10 @@ p {
     width: 50%;
 }
 
+.hobby-header {
+    text-align: center;
+}
+
 .portfolio-img {
     width: 250px;
     display: inline-block;
