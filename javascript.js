@@ -1,3 +1,6 @@
+
+const message = "Hello World!"
+
 function showAlert() {
-    alert (console.log("Hello World!"));
+    alert(`${message}`);
 }
