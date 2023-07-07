@@ -94,10 +94,11 @@ h3 {
 
 
 .personal-summary {
-    display: block;
-    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     color: #3a432c;
-    font-size: large;s
+    font-size: large;
 
 }
 
