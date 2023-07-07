@@ -42,10 +42,17 @@ li a:hover {
 
 h1 {
     text-align: center;
+    color: #718355;
+
 }
 
 h2 {
     text-align: center;
+    color: #718355;
+}
+
+h3 {
+    color: #718355;
 }
 
 .project-outer {
@@ -81,11 +88,17 @@ p {
     display: flex;
     margin-right: auto;
     margin-left: auto;
+    color: #3a432c;
+    font-size: large;
 
 }
 
 .hobby-header {
     text-align: center;
+}
+
+.hobby-paragraph {
+    display: inline-block;
 }
 
 .portfolio-img {
