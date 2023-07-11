@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('Wildflower-background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <title>My Personal Website</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li class="name">Christina Lee</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <!-- A contact form with the following:
+-name field
+-email field
+-message field
+-submit button -->
+
+    <div>
+
+        <form action="formsubmitted.html" target="_blank">
+            <p class="form">
+                Please enter your contact infomation
+            </p>
+            <label for="fullname"></label>
+            <input type="text" name="fullname" placeholder="Enter your full name" />
+
+            <br />
+
+            <label for="email"></label>
+            <input type="email" name="email" placeholder="Email" />
+
+            <br />
+
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Leave a comment" style="height:200px"></textarea>
+
+            <br />
+
+
+            <label for="submit"></label>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+</body>
+
+</html>
