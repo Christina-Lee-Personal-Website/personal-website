@@ -1,4 +1,3 @@
-
 const message = "Hello World!"
 
 function showAlert() {
