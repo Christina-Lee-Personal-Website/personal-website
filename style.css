@@ -65,15 +65,25 @@ h3 {
 }
 
 .project-inner {
-    display: block;
+    transition-duration: 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 60%;
     background-color:rgb(241, 227, 220);
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     margin-right: auto;
     margin-left: auto;
-
+    border-radius: 25px;
 }
+
+.project-inner:hover {
+    transition-timing-function: ease;
+    background: rgb(241, 192, 167);
+}
+
+
 
 .personal-page {
     display: flex;
@@ -100,7 +110,12 @@ h3 {
     margin-right: auto;
     color: #3a432c;
     font-size: large;
+    transition-duration: 500ms;
+}
 
+.personal-summary:hover {
+    transition-timing-function: ease;
+    color: #6d8646;
 }
 
 .hobby-header {
@@ -111,30 +126,52 @@ h3 {
     display: inline-block;
     font-size: large;
     width: 49%;
-    vertical-align: middle;
 }
 
 .hobby-img {
+    display: inline-block;
     margin-left: 10%;
-    display: inline-block;
-    vertical-align: middle;
+    width: 250px;
 
-
-}
-
-.project-description {
-    width: 50%;
-    display: inline-block;
-    font-size: large;
-    vertical-align: middle;
-    margin-left: 15px;
-    padding: 20px;
 
 }
 
 .portfolio-img {
     width: 250px;
     margin-left: 15%;
-    vertical-align: middle;
     display: inline-block;
+}
+
+.project-description {
+    width: 49%;
+    display: inline-block;
+    font-size: large;
+    margin-left: 15px;
+    padding: 20px;
+
+}
+
+
+
+/* Desktop: 1680 x 1050
+iPad: 1024 x 768
+Mobile: 480 x 320 */
+
+@media (max-width: 1680) {
+    header {
+        position: fixed;
+    }
+}
+
+@media (max-width: 1024) {
+    header {
+        position: fixed;
+    }
+
+}
+
+@media (max-width: 480) {
+    header {
+        position: fixed;
+    }
 }
