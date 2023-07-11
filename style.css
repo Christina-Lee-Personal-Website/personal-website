@@ -68,7 +68,9 @@ h3 {
     transition-duration: 500ms;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* flex: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
     width: 60%;
     background-color:rgb(241, 227, 220);
     padding: 10px;
@@ -84,6 +86,10 @@ h3 {
 }
 
 
+
+.hobby-img {
+    flex-basis: 40%;
+}
 
 .personal-page {
     display: flex;
@@ -123,15 +129,13 @@ h3 {
 }
 
 .hobby-paragraph {
-    display: inline-block;
     font-size: large;
     width: 49%;
 }
 
 .hobby-img {
-    display: inline-block;
     margin-left: 10%;
-    width: 250px;
+    max-width: 100%;
 
 
 }
@@ -139,12 +143,10 @@ h3 {
 .portfolio-img {
     width: 250px;
     margin-left: 15%;
-    display: inline-block;
 }
 
 .project-description {
     width: 49%;
-    display: inline-block;
     font-size: large;
     margin-left: 15px;
     padding: 20px;
@@ -153,25 +155,42 @@ h3 {
 
 
 
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 75%;
+}
+
+input[type=submit] {
+    width: 50%;
+}
+
+input[type=submit]:active {
+    background-color: #9fad88;
+    color: salmon;
+    cursor: pointer;
+
+}
+
 /* Desktop: 1680 x 1050
 iPad: 1024 x 768
 Mobile: 480 x 320 */
 
 @media (max-width: 1680) {
-    header {
-        position: fixed;
-    }
+
+
 }
 
 @media (max-width: 1024) {
-    header {
-        position: fixed;
-    }
+
+
 
 }
 
 @media (max-width: 480) {
-    header {
-        position: fixed;
-    }
+
 }
