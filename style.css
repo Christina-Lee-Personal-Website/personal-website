@@ -10,6 +10,7 @@ header {
     right: 0;
     height: 80px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     overflow: hidden;
 }
