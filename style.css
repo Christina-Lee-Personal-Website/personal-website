@@ -1,6 +1,19 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
+body {
+
+        background-image: url('Wildflower-background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+}
+
+/* Navigation Bar */
 
 header {
     background-color: darksalmon;
@@ -12,7 +25,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    z-index: 1;
 }
 
 header * {
@@ -27,37 +41,148 @@ body {
 header li {
     color: lavender;
     margin: 20px;
-    font-size: x-large;
+    font-size: 25px;
+
 }
 
 .name {
-    font-size: xx-large;
+    font-size: 35px;
+    left: 0;
+    right: 0;
+    padding: 0.5em 1em;
 }
 
 header li a {
     color: lavender;
     text-decoration: none;
-    padding: 30px;
+    padding: 20px;
 }
 
 li a:hover {
     background-color: rgb(235, 165, 165);
+    height: 80px;
+
 }
+
+/* Headings */
 
 h1 {
     text-align: center;
-    color: #718355;
+    color: #3a432c;
 
 }
 
 h2 {
     text-align: center;
-    color: #718355;
+    color: #54613f;
 }
 
 h3 {
-    color: #718355;
+    color: #65744e;
 }
+
+/* Home Page */
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section:hover {
+    transform: scale(1.1);
+    transition: ease 0.5s;
+
+}
+
+.personal-page {
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    color: #000;
+}
+
+.personal-page h1 {
+    position: relatiive;
+    margin: 0 0 20px;
+    padding: 0;
+    text-transform: uppercase;
+    z-index: 2;
+
+}
+
+.personal-summary {
+    color: #3a432c;
+    font-size: 16px;
+
+}
+
+/* About styling containers */
+
+.hobby-inner {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition-duration: 500ms;
+    background:rgb(241, 227, 220, 0.5);
+    border: 8px solid rgb(249, 243, 243, .2);
+    position: relative;
+    margin: 10px;
+ }
+
+/* About Page Content */
+
+.hobby-header {
+    text-align: center;
+}
+
+.hobby-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hobby-paragraph {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgb(241, 192, 167, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+
+.hobby-inner:hover {
+    background-color: darksalmon;
+    transform: scale(1.1);
+}
+
+.hobby-inner:hover .hobby-paragraph {
+    right: 0;
+
+}
+
+.hobby-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+/* Portfolio styling containers */
 
 .project-outer {
     border: 3px;
@@ -68,7 +193,6 @@ h3 {
     transition-duration: 500ms;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 60%;
     background-color:rgb(241, 227, 220);
     padding: 10px;
@@ -83,95 +207,168 @@ h3 {
     background: rgb(241, 192, 167);
 }
 
-
-
-.personal-page {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-img {
-    width: 300px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.personal-summary {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    color: #3a432c;
-    font-size: large;
-    transition-duration: 500ms;
-}
-
-.personal-summary:hover {
-    transition-timing-function: ease;
-    color: #6d8646;
-}
-
-.hobby-header {
-    text-align: center;
-}
-
-.hobby-paragraph {
-    display: inline-block;
-    font-size: large;
-    width: 49%;
-}
-
-.hobby-img {
-    display: inline-block;
-    margin-left: 10%;
-    width: 250px;
-
+/* Portfolio page content */
 
 }
 
 .portfolio-img {
     width: 250px;
     margin-left: 15%;
-    display: inline-block;
 }
 
 .project-description {
     width: 49%;
-    display: inline-block;
     font-size: large;
     margin-left: 15px;
     padding: 20px;
 
 }
 
+/* Contact Form w Animation */
+
+.form {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin: 1em 0;
+    padding: 2em 2em;
+    border-radius: 6px;
+    background-color:rgba(159, 173, 136, .7);
+    box-shadow: 0 30px 60px 0 rgba(113, 123, 97, 0.7);
+    animation: bounce 1.5s infinite;
+}
 
 
-/* Desktop: 1680 x 1050
+.form-title {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fullname {
+    height: 2em;
+    width: 80%;
+
+}
+
+.fullname:hover {
+    border-bottom: 5px solid #7a8569;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+
+}
+
+.email {
+    height: 2em;
+    width: 80%;
+}
+
+.email:hover {
+    border-bottom: 5px solid #7a8569;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+.message {
+    width: 300px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.message:hover {
+    border-bottom: 5px solid #7a8569;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input {
+    padding: .5em;
+    border: solid 1px #9fad88;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+}
+
+textarea {
+    min-height: 8em;
+    min-width: 100%;
+    padding: .5em;
+    border: solid 1px #9fad88;
+}
+
+input[type=submit] {
+    border-radius: 6px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    width: 10rem;
+}
+
+input[type=submit]:hover {
+    border-bottom: 5px solid #7a8569;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+input[type=submit]:active {
+    background-color: rgba(159, 173, 136, .7);
+    color: rgb(130, 72, 66);
+    cursor: pointer;
+
+}
+
+/* Animation Styling */
+
+@keyframes bounce {
+    0% {
+        transform: translate (0, 4px);
+    }
+    50% {
+        transform: translate(0, 8px);
+    }
+}
+
+/* SCREEN SIZE
+ Desktop: 1680 x 1050
 iPad: 1024 x 768
 Mobile: 480 x 320 */
 
-@media (max-width: 1680) {
-    header {
-        position: fixed;
-    }
-}
+@media (max-width: 1680px) {
 
-@media (max-width: 1024) {
-    header {
-        position: fixed;
+
+
+    .form {
+        width: 40%;
+        margin: auto;
     }
 
 }
 
-@media (max-width: 480) {
+@media (max-width: 1024px) {
+    .form {
+        width: 60%;
+        margin: auto;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .form {
+        min-width: 320px;
+        margin: auto;
+    }
+
     header {
-        position: fixed;
+        display: inline;
     }
 }
