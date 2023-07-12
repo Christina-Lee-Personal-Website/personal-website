@@ -1,15 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
 body {
 
-        background-image: url('Wildflower-background.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+    background-image: url('Wildflower-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 
@@ -17,54 +19,45 @@ body {
 
 header {
     background-color: darksalmon;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     height: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* overflow: hidden; */
-    z-index: 1;
-}
-
-header * {
-    display: inline;
-}
-
-body {
-    margin-top: 80px;
-    padding: 30px;
-}
-
-header li {
-    color: lavender;
-    margin: 20px;
-    font-size: 25px;
-
+    width: 100%;
 }
 
 .name {
+    color: #fff;
     font-size: 35px;
-    left: 0;
-    right: 0;
-    padding: 0.5em 1em;
+    font-weight: bold;
+    line-height: 80px;
+    padding-left: 30px;
+
 }
 
-header li a {
-    color: lavender;
-    text-decoration: none;
-    padding: 20px;
+nav ul {
+    float: right;
+    margin-right: 20px;
+    line-height: 80px;
 }
 
-li a:hover {
+nav ul li {
+    display: inline-block;
+    color: #fff;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
     background-color: rgb(235, 165, 165);
     height: 80px;
-
 }
 
-/* Headings */
+/*Headings */
 
 h1 {
     text-align: center;
@@ -83,18 +76,14 @@ h3 {
 
 /* Home Page */
 
-section {
+#home-page {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
     height: 100vh;
-}
-
-section:hover {
-    transform: scale(1.1);
-    transition: ease 0.5s;
-
 }
 
 .personal-page {
@@ -102,26 +91,36 @@ section:hover {
     max-width: 600px;
     padding: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-    overflow: hidden;
     color: #000;
 }
 
 .personal-page h1 {
-    position: relatiive;
+    position: relative;
     margin: 0 0 20px;
     padding: 0;
     text-transform: uppercase;
-    z-index: 2;
+}
+
+.personal-page:hover {
+    transform: scale(1.1);
+    transition: ease 0.5s;
 
 }
 
 .personal-summary {
     color: #3a432c;
-    font-size: 16px;
+    font-size: 20px;
 
 }
 
 /* About styling containers */
+
+.hobby-outer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .hobby-inner {
     width: 320px;
@@ -129,16 +128,22 @@ section:hover {
     border-radius: 20px;
     overflow: hidden;
     transition-duration: 500ms;
-    background:rgb(241, 227, 220, 0.5);
+    background: rgb(241, 227, 220, 0.5);
     border: 8px solid rgb(249, 243, 243, .2);
     position: relative;
     margin: 10px;
- }
+}
 
 /* About Page Content */
 
+.hobby-interest {
+    text-align: center;
+    margin: 30px;
+}
+
 .hobby-header {
     text-align: center;
+    margin: 30px;
 }
 
 .hobby-title {
@@ -194,7 +199,7 @@ section:hover {
     display: flex;
     flex-direction: column;
     width: 60%;
-    background-color:rgb(241, 227, 220);
+    background-color: rgb(241, 227, 220);
     padding: 10px;
     margin: 10px;
     margin-right: auto;
@@ -208,8 +213,6 @@ section:hover {
 }
 
 /* Portfolio page content */
-
-}
 
 .portfolio-img {
     width: 250px;
@@ -226,23 +229,20 @@ section:hover {
 
 /* Contact Form w Animation */
 
-.form {
+form {
     max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     margin: 1em 0;
     padding: 2em 2em;
+    display: block;
     border-radius: 6px;
-    background-color:rgba(159, 173, 136, .7);
+    background-color: rgba(159, 173, 136, .7);
     box-shadow: 0 30px 60px 0 rgba(113, 123, 97, 0.7);
     animation: bounce 1.5s infinite;
 }
 
 
 .form-title {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -286,7 +286,9 @@ section:hover {
     transform: scale(1.1);
 }
 
-label {
+
+
+#menu-item {
     display: block;
     margin-top: 1em;
 }
@@ -294,7 +296,7 @@ label {
 input {
     padding: .5em;
     border: solid 1px #9fad88;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
 }
 
@@ -307,7 +309,7 @@ textarea {
 
 input[type=submit] {
     border-radius: 6px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: uppercase;
     width: 10rem;
 }
@@ -331,6 +333,7 @@ input[type=submit]:active {
     0% {
         transform: translate (0, 4px);
     }
+
     50% {
         transform: translate(0, 8px);
     }
@@ -357,6 +360,15 @@ Mobile: 480 x 320 */
         width: 60%;
         margin: auto;
     }
+    nav {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
 
 
 }
@@ -364,11 +376,12 @@ Mobile: 480 x 320 */
 @media (max-width: 480px) {
 
     .form {
-        min-width: 320px;
         margin: auto;
+
     }
 
-    header {
-        display: inline;
+    .message {
+        max-width: 150px;
     }
+
 }
