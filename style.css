@@ -23,9 +23,8 @@ header {
     right: 0;
     height: 80px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     z-index: 1;
 }
 
@@ -34,28 +33,28 @@ header * {
 }
 
 body {
-    margin-top: 80px;
+    margin-top: 80px; */
     padding: 30px;
 }
 
 header li {
-    color: lavender;
+    color: #fff;
     margin: 20px;
     font-size: 25px;
-
 }
 
 .name {
     font-size: 35px;
+    font-weight: bold;
     left: 0;
     right: 0;
     padding: 0.5em 1em;
 }
 
 header li a {
-    color: lavender;
+    color: #fff;
     text-decoration: none;
-    padding: 20px;
+
 }
 
 li a:hover {
@@ -209,8 +208,6 @@ section:hover {
 
 /* Portfolio page content */
 
-}
-
 .portfolio-img {
     width: 250px;
     margin-left: 15%;
@@ -346,7 +343,7 @@ Mobile: 480 x 320 */
 
 
     .form {
-        width: 40%;
+        /* width: 40%; */
         margin: auto;
     }
 
@@ -366,9 +363,13 @@ Mobile: 480 x 320 */
     .form {
         min-width: 320px;
         margin: auto;
+
     }
 
     header {
-        display: inline;
+
+
+
     }
+
 }
