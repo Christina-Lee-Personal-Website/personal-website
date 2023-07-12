@@ -153,22 +153,66 @@ h3 {
 
 }
 
-
+/* Contact Form w Animation */
 
 .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     margin: 1em 0;
-    padding: 1em 1em;
-    border: solid 1px #9fad88;
+    padding: 2em 2em;
     border-radius: 6px;
-    min-width: 200px;
-    background-color:#9fad88;
+    background-color:rgba(159, 173, 136, .7);
+    box-shadow: 0 30px 60px 0 rgba(113, 123, 97, 0.7);
+    animation: bounce 1.5s infinite;
 }
+
 
 .form-title {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fullname {
+    height: 2em;
+    width: 80%;
+
+}
+
+.fullname:hover {
+    border-bottom: 5px solid #7a8569;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+
+}
+
+.email {
+    height: 2em;
+    width: 80%;
+}
+
+.email:hover {
+    border-bottom: 5px solid #7a8569;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+.message {
+    width: 300px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.message:hover {
+    border-bottom: 5px solid #7a8569;
+    transition: ease 0.5s;
+    transform: scale(1.1);
 }
 
 label {
@@ -179,6 +223,8 @@ label {
 input {
     padding: .5em;
     border: solid 1px #9fad88;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
 }
 
 textarea {
@@ -189,17 +235,32 @@ textarea {
 }
 
 input[type=submit] {
-    padding: .5em 1em;
     border-radius: 6px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    width: 10rem;
+}
 
+input[type=submit]:hover {
+    border-bottom: 5px solid #7a8569;
+    transition: ease 0.5s;
+    transform: scale(1.1);
 }
 
 input[type=submit]:active {
-    background-color: #6d8646;
-    color: rgb(247, 79, 60);
+    background-color: rgba(159, 173, 136, .7);
+    color: rgb(130, 72, 66);
     cursor: pointer;
 
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate (0, 4px);
+    }
+    50% {
+        transform: translate(0, 8px);
+    }
 }
 
 /* Desktop: 1680 x 1050
