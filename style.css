@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+body {
+
+        background-image: url('Wildflower-background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+}
+
+/* Navigation Bar */
+
 header {
     background-color: darksalmon;
     position: fixed;
@@ -12,7 +23,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    z-index: 1;
 }
 
 header * {
@@ -27,26 +39,34 @@ body {
 header li {
     color: lavender;
     margin: 20px;
-    font-size: x-large;
+    font-size: 25px;
+
 }
 
 .name {
-    font-size: xx-large;
+    font-size: 35px;
+    left: 0;
+    right: 0;
+    padding: 0.5em 1em;
 }
 
 header li a {
     color: lavender;
     text-decoration: none;
-    padding: 30px;
+    padding: 20px;
 }
 
 li a:hover {
     background-color: rgb(235, 165, 165);
+    height: 80px;
+
 }
+
+/* Headings */
 
 h1 {
     text-align: center;
-    color: #718355;
+    color: #3a432c;
 
 }
 
@@ -58,6 +78,8 @@ h2 {
 h3 {
     color: #718355;
 }
+
+/* Styling containers */
 
 .project-outer {
     border: 3px;
@@ -85,44 +107,47 @@ h3 {
     background: rgb(241, 192, 167);
 }
 
+/* Home Page */
 
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-.hobby-img {
-    flex-basis: 40%;
+section:hover {
+    transform: scale(1.1);
+    transition: ease 0.5s;
+
 }
 
 .personal-page {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    color: #000;
 }
 
-.home-img {
-    width: 300px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
+.personal-page h1 {
+    position: relatiive;
+    margin: 0 0 20px;
+    padding: 0;
+    text-transform: uppercase;
+    z-index: 2;
+
 }
-
-
 
 .personal-summary {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
     color: #3a432c;
-    font-size: large;
-    transition-duration: 500ms;
+    font-size: 16px;
+
 }
 
-.personal-summary:hover {
-    transition-timing-function: ease;
-    color: #6d8646;
-}
+/* About Page */
 
 .hobby-header {
     text-align: center;
@@ -137,6 +162,7 @@ h3 {
     margin-left: 10%;
     /* max-width: 100%; */
 
+/* Portfolio page */
 
 }
 
@@ -254,6 +280,8 @@ input[type=submit]:active {
 
 }
 
+/* Animation Styling */
+
 @keyframes bounce {
     0% {
         transform: translate (0, 4px);
@@ -263,7 +291,8 @@ input[type=submit]:active {
     }
 }
 
-/* Desktop: 1680 x 1050
+/* SCREEN SIZE
+ Desktop: 1680 x 1050
 iPad: 1024 x 768
 Mobile: 480 x 320 */
 
