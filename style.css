@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -72,39 +74,11 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #718355;
+    color: #54613f;
 }
 
 h3 {
-    color: #718355;
-}
-
-/* Styling containers */
-
-.project-outer {
-    border: 3px;
-
-}
-
-.project-inner {
-    transition-duration: 500ms;
-    display: flex;
-    flex-direction: column;
-    /* flex: wrap; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    width: 60%;
-    background-color:rgb(241, 227, 220);
-    padding: 10px;
-    margin: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 25px;
-}
-
-.project-inner:hover {
-    transition-timing-function: ease;
-    background: rgb(241, 192, 167);
+    color: #65744e;
 }
 
 /* Home Page */
@@ -147,22 +121,85 @@ section:hover {
 
 }
 
-/* About Page */
+/* About styling containers */
+
+.hobby-inner {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition-duration: 500ms;
+    background:rgb(241, 227, 220, 0.5);
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* About Page Content */
 
 .hobby-header {
     text-align: center;
 }
 
+.hobby-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
 .hobby-paragraph {
-    font-size: large;
-    width: 49%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin: 10px;
+    background: rgb(241, 192, 167, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    color: #fff;
 }
 
 .hobby-img {
-    margin-left: 10%;
-    /* max-width: 100%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 
-/* Portfolio page */
+}
+
+.hobby-inner:hover {
+    transition-timing-function: ease;
+    background: rgb(241, 192, 167);
+}
+
+/* Portfolio styling containers */
+
+.project-outer {
+    border: 3px;
+
+}
+
+.project-inner {
+    transition-duration: 500ms;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color:rgb(241, 227, 220);
+    padding: 10px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+}
+
+.project-inner:hover {
+    transition-timing-function: ease;
+    background: rgb(241, 192, 167);
+}
+
+/* Portfolio page content */
 
 }
 
