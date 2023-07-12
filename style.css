@@ -135,7 +135,7 @@ h3 {
 
 .hobby-img {
     margin-left: 10%;
-    max-width: 100%;
+    /* max-width: 100%; */
 
 
 }
@@ -159,19 +159,45 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1em 0;
+    padding: 1em 1em;
+    border: solid 1px #9fad88;
+    border-radius: 6px;
+    min-width: 200px;
+    background-color:#9fad88;
 }
 
-input[type=text] {
-    width: 75%;
+.form-title {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input {
+    padding: .5em;
+    border: solid 1px #9fad88;
+}
+
+textarea {
+    min-height: 8em;
+    min-width: 100%;
+    padding: .5em;
+    border: solid 1px #9fad88;
 }
 
 input[type=submit] {
-    width: 50%;
+    padding: .5em 1em;
+    border-radius: 6px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 input[type=submit]:active {
-    background-color: #9fad88;
-    color: salmon;
+    background-color: #6d8646;
+    color: rgb(247, 79, 60);
     cursor: pointer;
 
 }
@@ -180,17 +206,34 @@ input[type=submit]:active {
 iPad: 1024 x 768
 Mobile: 480 x 320 */
 
-@media (max-width: 1680) {
+@media (max-width: 1680px) {
+
+
+
+    .form {
+        width: 40%;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .form {
+        width: 60%;
+        margin: auto;
+    }
 
 
 }
 
-@media (max-width: 1024) {
+@media (max-width: 480px) {
 
+    .form {
+        min-width: 320px;
+        margin: auto;
+    }
 
-
-}
-
-@media (max-width: 480) {
-
+    header {
+        display: inline;
+    }
 }
