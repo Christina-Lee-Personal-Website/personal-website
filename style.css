@@ -237,6 +237,13 @@ h3 {
 
 /* Contact Form w Animation */
 
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 form {
     max-width: 480px;
     margin: 1em 0;
@@ -357,17 +364,24 @@ Mobile: 480 x 320 */
 
 
     .form {
-        width: 40%;
-        margin: auto;
+        min-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
 }
 
 @media (max-width: 1024px) {
     .form {
-        width: 60%;
-        margin: auto;
+        min-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
+
     nav {
         font-size: 30px;
         padding-left: 50px;
@@ -384,7 +398,10 @@ Mobile: 480 x 320 */
 @media (max-width: 480px) {
 
     .form {
-        margin: auto;
+        min-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
