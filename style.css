@@ -7,7 +7,7 @@
 }
 
 body {
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: url('Wildflower-background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -66,7 +66,7 @@ h1 {
 }
 
 h2 {
-    text-align: center;
+    /* text-align: center; */
     color: #54613f;
 }
 
@@ -189,42 +189,50 @@ h3 {
 
 /* Portfolio styling containers */
 
-.project-outer {
-    border: 3px;
 
-}
 
 .project-inner {
-    transition-duration: 500ms;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    background-color: rgb(241, 227, 220);
+    width: 50%;
     padding: 10px;
-    margin: 10px;
+    margin: 30px;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 25px;
-}
+    background: rgb(241, 227, 220, 0.5);
+    border-radius: 10px;
 
-.project-inner:hover {
-    transition-timing-function: ease;
-    background: rgb(241, 192, 167);
 }
 
 /* Portfolio page content */
 
-.portfolio-img {
-    width: 250px;
-    margin-left: 15%;
+.project-title {
+    text-align: center;
+    padding: 5px;
 }
 
-.project-description {
-    width: 49%;
-    font-size: large;
-    margin-left: 15px;
-    padding: 20px;
+.imgbox {
+    text-align: center;
+}
 
+.portfolio-img {
+    width: 250px;
+    transition: transform .5s;
+    border-radius: 5px;
+    /* float: left; */
+}
+
+.portfolio-img:hover {
+    transform: scale(3.5);
+}
+
+
+.project-description {
+    padding: 20px;
+    text-align: justify;
+
+}
+
+.project-inner:hover {
+    transform: scale(1.1);
 }
 
 /* Contact Form w Animation */
