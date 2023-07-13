@@ -237,6 +237,12 @@ h3 {
 
 /* Contact Form w Animation */
 
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     max-width: 480px;
     margin: 1em 0;
